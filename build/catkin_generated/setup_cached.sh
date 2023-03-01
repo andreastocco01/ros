@@ -8,6 +8,7 @@
 
 # modified environment variables
 export CMAKE_PREFIX_PATH="/home/gino/gits/ros/devel:$CMAKE_PREFIX_PATH"
+export LD_LIBRARY_PATH="/home/gino/gits/ros/devel/lib:$LD_LIBRARY_PATH"
 export PWD='/home/gino/gits/ros/build'
 export ROSLISP_PACKAGE_DIRECTORIES='/home/gino/gits/ros/devel/share/common-lisp'
 export ROS_PACKAGE_PATH="/home/gino/gits/ros/src:$ROS_PACKAGE_PATH"

@@ -131,9 +131,7 @@ endif()
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
   include("/home/gino/gits/ros/build/gtest/cmake_install.cmake")
-  include("/home/gino/gits/ros/build/node/cmake_install.cmake")
-  include("/home/gino/gits/ros/build/publisher/cmake_install.cmake")
-  include("/home/gino/gits/ros/build/subscriber/cmake_install.cmake")
+  include("/home/gino/gits/ros/build/topic/cmake_install.cmake")
 
 endif()
 

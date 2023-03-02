@@ -491,6 +491,12 @@ subscriber_BINARY_DIR:STATIC=/home/gino/gits/ros/build/subscriber
 //Value Computed by CMake
 subscriber_SOURCE_DIR:STATIC=/home/gino/gits/ros/src/subscriber
 
+//Value Computed by CMake
+topic_BINARY_DIR:STATIC=/home/gino/gits/ros/build/topic
+
+//Value Computed by CMake
+topic_SOURCE_DIR:STATIC=/home/gino/gits/ros/src/topic
+
 //The directory containing a CMake configuration file for xmlrpcpp.
 xmlrpcpp_DIR:PATH=/opt/ros/noetic/share/xmlrpcpp/cmake
 
@@ -642,7 +648,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=7
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=5
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP

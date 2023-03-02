@@ -9,7 +9,16 @@ int main (int argc, char** argv) {
     ros::init(argc, argv, "subscriber");
     ros::NodeHandle node;
 
-    ros::Subscriber subscriber = node.subscribe("chat_topic", 100, callback);
-    ros::spin(); // non so perche' vada messo
+    ros::Subscriber subscriber = node.subscribe("chat_topic", 1, callback);
+
+    // ros::spin();
+
+    // essendo la coda lunga 1 e la velocita' di esecuzione del ciclo DOPPIA rispetto a quella del publisher
+    // il subscriber sara' in grado di ricevere effettivamente solo messaggi alterni! 
+    ros::Rate rate(0.5);
+    while (ros::ok()) {
+        ros::spinOnce();
+        rate.sleep();
+    }
     return 0;
 }

@@ -9,7 +9,7 @@ int main (int argc, char** argv) {
     ros::NodeHandle node;
 
     ros::Rate rate(1);
-    ros::Publisher publisher = node.advertise<std_msgs::String>("chat_topic", 1000);
+    ros::Publisher publisher = node.advertise<std_msgs::String>("chat_topic", 100);
 
     srand((unsigned) time(NULL));
 
@@ -24,7 +24,6 @@ int main (int argc, char** argv) {
         ROS_INFO("I send [%s]", message.data.c_str());
 
         publisher.publish(message);
-        ros::spinOnce(); // invia effettivamente tutti i messaggi che sono presenti nel buffer
         rate.sleep();
     }
     return 0;

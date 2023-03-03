@@ -8,3 +8,4 @@
 
 # modified environment variables
 export PWD='/home/gino/gits/ros/build'
+export PYTHONPATH="/home/gino/gits/ros/devel/lib/python3/dist-packages:$PYTHONPATH"

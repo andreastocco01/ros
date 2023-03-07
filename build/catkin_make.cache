@@ -1,2 +1,2 @@
-service:topic
+my_robot:service:topic
 -DCATKIN_DEVEL_PREFIX=/home/gino/gits/ros/devel -DCMAKE_INSTALL_PREFIX=/home/gino/gits/ros/install -G Unix Makefiles

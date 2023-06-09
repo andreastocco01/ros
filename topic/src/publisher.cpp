@@ -9,7 +9,7 @@ int main (int argc, char** argv) {
     ros::NodeHandle node;
 
     ros::Rate rate(1);
-    ros::Publisher publisher = node.advertise<std_msgs::String>("chat_topic", 100);
+    ros::Publisher publisher = node.advertise<std_msgs::String>("topic", 100);
 
     srand((unsigned) time(NULL));
 

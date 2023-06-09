@@ -9,7 +9,7 @@ int main (int argc, char** argv) {
     ros::init(argc, argv, "subscriber");
     ros::NodeHandle node;
 
-    ros::Subscriber subscriber = node.subscribe("chat_topic", 1, callback);
+    ros::Subscriber subscriber = node.subscribe("topic", 1, callback);
 
     // ros::spin();
 

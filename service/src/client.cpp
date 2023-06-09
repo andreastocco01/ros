@@ -25,5 +25,6 @@ int main (int argc, char** argv) {
         ROS_ERROR("Failed to call the service");
         return 1;
     }
+    sleep(45);
     return 0;
 }
